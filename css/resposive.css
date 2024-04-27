@@ -1,0 +1,26 @@
+/* 
+=== LAPTOP SCREENS
+ */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* 
+=== LARGE TABLAT SCREENS
+ */
+
+@media (max-width: 992px) {}
+
+
+/* 
+=== TABLAT SCREENS
+ */
+
+@media (max-width: 768px) {}
+
+
+/* 
+=== MOBILE SCREENS
+ */
+
+@media (max-width: 576px) {}

@@ -2,25 +2,50 @@
 === LAPTOP SCREENS
  */
 
-@media only screen and (max-width: 1200px) {}
-
+@media only screen and (max-width: 1200px) {
+}
 
 /* 
 === LARGE TABLAT SCREENS
  */
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .headerSection .navbar {
+    text-align: center;
+  }
 
+  .headerSection .navbar .nav-link {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .heroSection .carousel .item {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .foodList,
+  .offerSection .offerContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hotSection .food {
+    margin-bottom: 1rem;
+  }
+}
 
 /* 
 === TABLAT SCREENS
  */
 
-@media (max-width: 768px) {}
-
+@media (max-width: 768px) {
+}
 
 /* 
 === MOBILE SCREENS
  */
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+}

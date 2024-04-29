@@ -97,6 +97,39 @@ body {
   box-shadow: none;
 }
 
+.headerSection .navbar .navAction {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerSection .navbar .navAction .cartBtn {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--bg-primary);
+  padding: 0.4rem 0.6rem;
+  border-radius: 50%;
+  color: var(--bg-primary);
+  position: relative;
+}
+
+.headerSection .navbar .navAction .cartBtn::before {
+  content: "1";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: crimson;
+  font-size: 0.75rem;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HERO SECTION */
 
 .heroSection {
@@ -285,6 +318,18 @@ body {
   font-weight: 700;
   color: crimson;
   margin-bottom: 0;
+}
+
+.offerSection .offerContainer .item .itemContent .mainBtn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.offerSection .offerContainer .item .itemContent .mainBtn:hover {
+  background-color: transparent;
+  color: #000;
 }
 
 /* about section */
@@ -622,4 +667,115 @@ body {
   font-size: 0.85rem;
   font-weight: 600;
   color: #000;
+}
+
+/* LIST ORDER SECTION */
+
+.cartList {
+  margin-top: 3rem;
+}
+
+.cartList .sectionHeading {
+  margin-bottom: 2rem;
+}
+
+.cartList .sectionHeading .title {
+  font-weight: 700;
+}
+
+.cartList .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid var(--bg-primary);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.cartList .details .mainHeading {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cartList .details .productImage img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cartList .details .mainHeading .heading .title {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.cartList .details .mainHeading .heading .text {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+.cartList .details .price {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--bg-primary);
+}
+
+.cartList .details .action {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cartList .details .action .actionBtn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background-color: crimson;
+  color: #fff;
+  border: 0;
+  border-radius: 100vw;
+}
+
+.cartList .details .action .actionBtn:first-child {
+  background-color: green;
+}
+
+/* payment model */
+
+.paymentModal .modal-body .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paymentModal .modal-body .cardlogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.paymentModal .modal-body .input-group .control label {
+  font-weight: 700;
+}
+
+.paymentModal .modal-body .input-group .control .text {
+  font-size: 0.75rem;
+}
+
+.paymentModal .modal-body .input-group .control .form-control {
+  padding: 0.85rem 1.85rem;
+}
+
+.paymentModal .modal-body .input-group .control .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.paymentModal .modal-footer .canBtn {
+  background-color: crimson;
+  border-color: crimson;
 }
